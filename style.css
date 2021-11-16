@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto";
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  min-height: 100vh;
+}
+
+.login-page {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  min-height: 100vh;
+  display: flex;
+}
+
+.input-form {
+  margin: auto;
+  width: 500px;
+  max-width: 90%;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+.input-form form {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 16px black;
+  border-radius: 4px;
+}
+
+textarea {
+  background-color: #dddddd;
+  color: #666666;
+  outline: none;
+  resize: none;
+  padding: 1em;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  font-size: 16px;
+  line-height: 1.4;
+  width: 400px;
+  height: 300px;
+  transition: all 0.2s;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+textarea:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+textarea:focus {
+  cursor: text;
+  color: #333333;
+  background-color: white;
+  border-color: #333333;
+}
+
+.input-form form h1 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.input-form form .form-control {
+  width: 100%;
+  height: 40px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid silver;
+  margin: 10px 0 18px 0;
+  padding: 0 10px;
+}
+
+.input-form .submit-btn {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 34px;
+  border: none;
+  outline: none;
+  background: rgb(31, 87, 31);
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 4px;
+  transition: 0.3s;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.input-form .submit-btn:hover {
+  opacity: 0.7;
+}
+
+.animation-area-welcome {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  width: 100%;
+  height: 100vh;
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+}
+
+.animation-area {
+  color: rgb(0, 0, 0);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  width: 100%;
+  height: 100vh;
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 10s ease-in-out infinite;
+}
+
+.welcome {
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5rem 10rem;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.greet {
+  font-size: 1.2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 8vh;
+  background-color: black;
+}
+
+.home a {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: white;
+}
+
+.home h4 a:hover {
+  color: tomato;
+  transition: 0.3s;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+nav ul li a:hover {
+  color: tomato;
+  transition: 0.3s;
+}
+
+.user {
+  font-size: 1.5rem;
+  margin-left: -140px;
+  color: white;
+}
+
+.blog {
+  margin-bottom: 20px;
+}
+
+.date {
+  font-weight: bold;
+  color: #fff;
+}
+
+.paragraph {
+  border-left: 5px solid #2370a5;
+  padding-left: 5px;
+  margin-bottom: 10px;
+}
+
+.body-blog {
+  background-image: url("img/picture.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 80%;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 700px;
+  border: 20px solid #fff;
+}
+
+.blog h2 a:hover {
+  color: tomato;
+  transition: 0.3s;
+}
+
+h2 a {
+  font-size: 2rem;
+  color: #fff;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+p {
+  color: #fff;
+  font-weight: 600;
+}
+
+.blog h2 {
+  color: white;
+}
+
+.post-info {
+  margin: 10px auto 0;
+  padding: 5px;
+}
+
+.like {
+  background-color: rgb(0, 145, 24);
+  border-radius: 50%;
+}
